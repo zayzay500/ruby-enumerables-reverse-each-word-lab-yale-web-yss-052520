@@ -10,6 +10,9 @@ def reverse_each_word(string)
       reverse_word << char
       reverse_sentence << reverse_word
       reverse_word = []
+    elsif char == char_array.last
+      reverse_word.unshift(char)
+      reverse_sentence << reverse_word
     else
       reverse_word.unshift(char)
     end
